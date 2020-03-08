@@ -135,11 +135,13 @@ Print_r ($sucursalA);
 echo "<br>";
 echo "<br> Ejercicio 6   <br>";
 
-$arreglo=array(" <br> el 1° numero par es:2 <br> ","el 2° numero par es:4 <br>","el 3° numero par es:6 <br> ",
-"el 4° numero par es:8 <br> ","el 5° numero par es:10 <br> ");
-echo("<br> ");
+$NumerosPares=array("1°numero "=> "2","2°numero "=> "4","3°numero "=> "6",
+"4°numero"=> "8","5°numero "=> "10");
 
-Print_r($arreglo);
+foreach($NumerosPares as $consecutivo=>$pares)
+{
+    echo ("El $consecutivo par es: $pares <br>");
+}
 
     
     
