@@ -1,5 +1,7 @@
 <?php
 
+include('funcionWeb1.php');
+
 echo ("Generalidades PHP1 y desarrolle los siguientes ejercicios de Programacion Yuliana Paniagua <br>");
 //Ejercicio 1
 echo "<br> Ejercicio 1";
@@ -115,35 +117,94 @@ else{
 }
 
 //Ejercicio 5
+
+echo "<br><br>Ejercicio 5 <br>";
 echo "<br>";
-echo "<br> Ejercicio 5 <br>";
+echo"Los usuarios registrados en la sucursal A son: <br>";
 
-$sucursalA=array(
-    'usuario1'=>array('nombre'=>"Ana",'telefono'=>3108596,'direccion'=>"calle 5 No 98-58",'salario'=>"1000000"),
-    'usuario2'=>array('nombre'=>"Isabella",'telefono'=>2581147,'direccion'=>"calle 52 No 50-12",'salario'=>"1200000"),
-    'usuario3'=>array('nombre'=>"Sara",'telefono'=>2368516,'direccion'=>"Cra 45 No 85-49",'salario'=>"2000000"),
-    'usuario4'=>array('nombre'=>"Mariana",'telefono'=>2111587,'direccion'=>"Cra 50 No 60-51",'salario'=>"2500000"),
-    'usuario5'=>array('nombre'=>"Alejandro",'telefono'=>5128742,'direccion'=>"Cra 44 No 8-42",'salario'=>"4000000"),
-);
-echo ("<br>");
+$usuario1="Juan Perez -"; 
+$telefono1="3224567898 -"; 
+$direccion1= "Cll 100sur-#34a-25 -"; 
+$salario1=3520000;
 
-echo ("<br>.......................");
+$usuario2="Ana Gaviria -"; 
+$telefono2="3024569852 -"; 
+$direccion2="Cll 90#10-80 -"; 
+$salario2=4580000;
 
-Print_r ($sucursalA);
+$usuario3="Pedro Mesa"; 
+$telefono3="3108965474 -"; 
+$direccion3="Cll 85 #25-10 -"; 
+$salario3=1250000;
 
+$usuario4="Catalina Castaño -"; 
+$telefono4="3148555555 -"; 
+$direccion4="Cll 100sur # 35a-27 -"; 
+$salario4=3800000;
+
+$usuario5="Gabriel Rodriguez -"; 
+$telefono5="3001234879 -"; 
+$direccion5="Cr 37 # 100-20 -"; 
+$salario5=6490000;
+
+
+echo "<br>";
+echo $usuario1.$telefono1.$direccion1." $".$salario1."<br>";
+echo $usuario2.$telefono2.$direccion2." $".$salario2."<br>";
+echo $usuario3.$telefono3.$direccion3." $".$salario3."<br>";
+echo $usuario4.$telefono4.$direccion4." $".$salario4."<br>";
+echo $usuario5.$telefono5.$direccion5." $".$salario5."<br>";
+
+$sumatoriaSalarios=($salario1+$salario2+$salario3+$salario4+$salario5);
+$salarioSucarsalB=20000000;
+$salarioSucursalC=15000000;
+echo "<br>";
+if($sumatoriaSalarios>$salarioSucarsalB&&$sumatoriaSalarios>$salarioSucursalC){
+
+    echo"El mayor ingreso lo tiene la sucrusal A";
+}
+elseif($salarioSucarsalB>$sumatoriaSalarios&&$salarioSucarsalB>$salarioSucursalC){
+    echo"El mayor ingreso lo tiene la sucursal B";
+}
+else
+    echo"El mayor ingreso lo tiene la sucursal C";
+
+    
 //Ejercicio 6
 echo "<br>";
 echo "<br> Ejercicio 6   <br>";
+echo "<br>";
 
 $NumerosPares=array("1°numero "=> "2","2°numero "=> "4","3°numero "=> "6",
-"4°numero"=> "8","5°numero "=> "10");
+"4°numero"=> "8","5°numero "=> "10","6°numero "=> "12","7°numero "=> "14","8°numero "=> "16","9°numero "=> "18",
+"10°numero "=> "20");
 
 foreach($NumerosPares as $consecutivo=>$pares)
 {
     echo ("El $consecutivo par es: $pares <br>");
 }
 
-    
+//Ejercicio 7
+echo "<br>";
+echo "<br> Ejercicio 7   <br>";
+echo "<br>";    
+
+echo "El salpicon esta compuesto por: <br>";
+$Salpicon = array('dulce1'=>"Banano <br>",'dulce2'=>"Manzana <br>",'dulce3'=>"Durazno <br>",'acido1'=>"Piña <br>",'acido2'=>"Naranja <br>",
+'acido3'=>"Lulo");
+print_r($Salpicon);
+
+//Ejercicio 8
+echo "<br>";
+echo "<br> Ejercicio 8   <br>";
+
+calcularEdad(1991);
+echo ("<br><br>");
+calcularEdad2(1995,2020);
+echo ("<br><br>");   
+calcularEdad3(1987,2020);
+echo ("<br><br>"); 
+
     
 
 
