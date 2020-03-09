@@ -205,6 +205,17 @@ echo ("<br><br>");
 calcularEdad3(1987,2020);
 echo ("<br><br>"); 
 
+//Ejercicio 9
+echo "<br>";
+echo "<br> Ejercicio 9   <br>";
+
+calcularEstatura(1.65m);
+echo ("<br><br>");
+calcularEstatura2(1.78m);
+echo ("<br><br>");   
+calcularEstatura3(1.95m);
+echo ("<br><br>"); 
+
     
 
 

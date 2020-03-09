@@ -20,6 +20,45 @@ function calcularEdad3($nacimiento,$actual){
     
 }
 
-
+function calcularEstatura($estatura){
+    if  ($estatura<1.70m)
+    {
+        echo " Biotipo Bajo";      
+    }
+    elseif ($estatura<=1.70m && $estatura<1.80m)
+    {
+        echo "Biotipo Promedio";
+    }
+   else
+   {
+    echo "Biotipo Superior";
+   }
+   
+   function calcularEstatura2($estatura){
+    if  ($estatura<1.70m)
+    {
+        echo " Biotipo Bajo";      
+    }
+    elseif ($estatura<=1.70m && $estatura<1.80m)
+    {
+        echo "Biotipo Promedio";
+    }
+   else
+   {
+    echo "Biotipo Superior";
+   }
+   function calcularEstatura3($estatura){
+    if  ($estatura<1.70m)
+    {
+        echo " Biotipo Bajo";      
+    }
+    elseif ($estatura<=1.70m && $estatura<1.80m)
+    {
+        echo "Biotipo Promedio";
+    }
+   else
+   {
+    echo "Biotipo Superior";
+   }
 
 ?>  
