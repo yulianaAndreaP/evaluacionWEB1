@@ -206,15 +206,45 @@ calcularEdad3(1987,2020);
 echo ("<br><br>"); 
 
 //Ejercicio 9
+
 echo "<br>";
 echo "<br> Ejercicio 9   <br>";
+echo "<br>";
 
-calcularEstatura(1.65m);
+calcularEstatura(1.65);
 echo ("<br><br>");
-calcularEstatura2(1.78m);
+calcularEstatura(1.78);
 echo ("<br><br>");   
-calcularEstatura3(1.95m);
+calcularEstatura(1.95);
 echo ("<br><br>"); 
+
+//Ejercicio 10
+echo "<br>";
+echo "<br> Ejercicio 10   <br>";
+echo "<br>";
+
+$Seleccion=array(
+    'Persona1'=>array('jugador' => "Radamel Falcao",'Año de nacimiento'=> edad(1986,2020),'Posicion'=> "Delantero",'Estatura'=> Estatura(1.77)),
+    'Persona2'=>array('jugador' => "James Rodriguez",'Año de nacimiento'=> edad(1991,2020),'Posicion'=> "Medio campista",'Estatura'=> Estatura(1.81)),
+    'Persona3'=>array('jugador' => "Juan Cuadrado ",'Año de nacimiento'=> edad(1988,2020),'Posicion'=> "Delantero",'Estatura'=> Estatura(1.78)),
+    'Persona4'=>array('jugador' => "Yerry Mina ",'Año de nacimiento'=> edad(1994,2020),'Posicion'=> "Defensor  ",'Estatura'=> Estatura(1.95)),
+    'Persona5'=>array('jugador' => "David Ospina",'Año de nacimiento'=> edad(1988,2020),'Posicion'=> "Portero ", 'Estatura'=>Estatura(1.83)),
+    'Persona6'=>array('jugador' => "Davinsón Sanchez",'Año de nacimiento'=> edad(1996,2020),'Posicion'=> "Defensor", 'Estatura'=>Estatura(1.87)),
+    'Persona7'=>array('jugador' => "Duvan Zapata ",'Año de nacimiento'=> edad(1991,2020),'Posicion'=> "Delantero", 'Estatura'=>Estatura(1.86)),
+    'Persona8'=>array('jugador' => "Wilmar Barrios",'Año de nacimiento'=> edad(1993,2020),'Posicion'=> "Medio campista", 'Estatura'=>Estatura(1.78)),
+    'Persona9'=>array('jugador' => "Mateus Uribe",'Año de nacimiento'=> edad(1991,2020),'Posicion'=> "Medio campista", 'Estatura'=>Estatura(1.80))
+);
+
+
+foreach($Seleccion as $arreglojugador=>$nombre)
+{
+    echo("<br>".$arreglojugador."<br>");
+    foreach($nombre as $claves=>$valores)
+    {
+        echo($valores."<br>");
+    }  
+    
+}
 
     
 

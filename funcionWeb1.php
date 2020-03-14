@@ -18,47 +18,52 @@ function calcularEdad3($nacimiento,$actual){
     echo("Si nacio $nacimiento usted tiene:  " .$edad);
    
     
-}
+}   
 
 function calcularEstatura($estatura){
-    if  ($estatura<1.70m)
+    if  ($estatura<1.70)
     {
-        echo " Biotipo Bajo";      
+        echo "Para una altura de $estatura su biotipo es: Biotipo Bajo<br>";
+              
     }
-    elseif ($estatura<=1.70m && $estatura<1.80m)
+    elseif ($estatura>=1.70 && $estatura<1.80)
     {
-        echo "Biotipo Promedio";
+        echo "Para una altura de $estatura su biotipo es: Biotipo Promedio<br>";
+        
     }
    else
    {
-    echo "Biotipo Superior";
+    echo "Para una altura de $estatura su biotipo es: Biotipo Superior<br>";
+    return $estatura;
    }
    
-   function calcularEstatura2($estatura){
-    if  ($estatura<1.70m)
+
+  
+}
+function edad($nacimiento,$actual){
+    $edad=$actual-$nacimiento;
+    return ($edad);
+   
+    
+} 
+
+function Estatura($Estatura){
+    if  ($Estatura<1.70)
     {
-        echo " Biotipo Bajo";      
+        return ("Su Biotipo es bajo<br>");
+              
     }
-    elseif ($estatura<=1.70m && $estatura<1.80m)
+    elseif ($Estatura>=1.70 && $Estatura<1.80)
     {
-        echo "Biotipo Promedio";
+        return ("Su Biotipo es promedio<br>");
+        
     }
    else
    {
-    echo "Biotipo Superior";
+    return ("Su Biotipo es Alto<br>");
    }
-   function calcularEstatura3($estatura){
-    if  ($estatura<1.70m)
-    {
-        echo " Biotipo Bajo";      
-    }
-    elseif ($estatura<=1.70m && $estatura<1.80m)
-    {
-        echo "Biotipo Promedio";
-    }
-   else
-   {
-    echo "Biotipo Superior";
-   }
+}
+   
+
 
 ?>  
